@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests : NSObject
+@end
+@implementation PodsDummy_Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests
+@end

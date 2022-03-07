@@ -1,0 +1,855 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E44179139FE94C5139D30F6 /* Pods_DesignSystemAdam_ai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C511B3925E7016781EEDE4EB /* Pods_DesignSystemAdam_ai.framework */; };
+		2886329D27D3A5BA003E70F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886329C27D3A5BA003E70F0 /* AppDelegate.swift */; };
+		2886329F27D3A5BA003E70F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886329E27D3A5BA003E70F0 /* SceneDelegate.swift */; };
+		288632A127D3A5BA003E70F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632A027D3A5BA003E70F0 /* ViewController.swift */; };
+		288632A427D3A5BA003E70F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288632A227D3A5BA003E70F0 /* Main.storyboard */; };
+		288632A627D3A5C1003E70F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288632A527D3A5C1003E70F0 /* Assets.xcassets */; };
+		288632A927D3A5C1003E70F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288632A727D3A5C1003E70F0 /* LaunchScreen.storyboard */; };
+		288632B427D3A5C2003E70F0 /* DesignSystemAdam_aiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632B327D3A5C2003E70F0 /* DesignSystemAdam_aiTests.swift */; };
+		288632BE27D3A5C2003E70F0 /* DesignSystemAdam_aiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632BD27D3A5C2003E70F0 /* DesignSystemAdam_aiUITests.swift */; };
+		288632C027D3A5C2003E70F0 /* DesignSystemAdam_aiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632BF27D3A5C2003E70F0 /* DesignSystemAdam_aiUITestsLaunchTests.swift */; };
+		288632CD27D3A614003E70F0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288632CC27D3A614003E70F0 /* Colors.xcassets */; };
+		288632D627D3A9E7003E70F0 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632CF27D3A9E7003E70F0 /* DesignSystem.swift */; };
+		288632D727D3A9E7003E70F0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632D127D3A9E7003E70F0 /* Colors.swift */; };
+		288632D827D3A9E7003E70F0 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632D327D3A9E7003E70F0 /* Typography.swift */; };
+		288632D927D3A9E7003E70F0 /* CustomFontDiscriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632D427D3A9E7003E70F0 /* CustomFontDiscriptor.swift */; };
+		288632DA27D3A9E7003E70F0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288632D527D3A9E7003E70F0 /* Fonts.swift */; };
+		28A65AA727D4CA98001F8EB2 /* Almarai-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A65AA327D4CA98001F8EB2 /* Almarai-Bold.ttf */; };
+		28A65AA827D4CA98001F8EB2 /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A65AA427D4CA98001F8EB2 /* Almarai-Regular.ttf */; };
+		28A65AA927D4CA98001F8EB2 /* Almarai-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A65AA527D4CA98001F8EB2 /* Almarai-ExtraBold.ttf */; };
+		28A65AAA27D4CA98001F8EB2 /* Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A65AA627D4CA98001F8EB2 /* Almarai-Light.ttf */; };
+		28A65AAC27D4CDFB001F8EB2 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65AAB27D4CDFB001F8EB2 /* Label.swift */; };
+		28A65AAE27D4D76B001F8EB2 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 288632DF27D3AA77003E70F0 /* Inter-Light.otf */; };
+		28A65AAF27D4D76B001F8EB2 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 288632DC27D3AA77003E70F0 /* Inter-Bold.otf */; };
+		28A65AB027D4D76B001F8EB2 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 288632E227D3AA77003E70F0 /* Inter-SemiBold.otf */; };
+		28A65AB127D4D76B001F8EB2 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 288632DD27D3AA77003E70F0 /* Inter-Regular.otf */; };
+		28A65AB427D4D963001F8EB2 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65AB327D4D963001F8EB2 /* Shadow.swift */; };
+		28A65AB627D4EF95001F8EB2 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65AB527D4EF95001F8EB2 /* Stroke.swift */; };
+		28A65AB827D4F53E001F8EB2 /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65AB727D4F53D001F8EB2 /* Radius.swift */; };
+		8BD610D4432CA6F971D0A18B /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE340BCC300BF2A81767AE /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework */; };
+		B1ED3BEE8E1E884347765147 /* Pods_DesignSystemAdam_aiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC1C49B56033169BC8E9EAB /* Pods_DesignSystemAdam_aiTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		288632B027D3A5C2003E70F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2886329127D3A5BA003E70F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2886329827D3A5BA003E70F0;
+			remoteInfo = DesignSystemAdam.ai;
+		};
+		288632BA27D3A5C2003E70F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2886329127D3A5BA003E70F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2886329827D3A5BA003E70F0;
+			remoteInfo = DesignSystemAdam.ai;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24C3FC34F0D6F60096B5BA89 /* Pods-DesignSystemAdam.ai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.ai.release.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.ai/Pods-DesignSystemAdam.ai.release.xcconfig"; sourceTree = "<group>"; };
+		2886329927D3A5BA003E70F0 /* DesignSystemAdam.ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystemAdam.ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2886329C27D3A5BA003E70F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2886329E27D3A5BA003E70F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		288632A027D3A5BA003E70F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		288632A327D3A5BA003E70F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		288632A527D3A5C1003E70F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		288632A827D3A5C1003E70F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		288632AA27D3A5C1003E70F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288632AF27D3A5C2003E70F0 /* DesignSystemAdam.aiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemAdam.aiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		288632B327D3A5C2003E70F0 /* DesignSystemAdam_aiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemAdam_aiTests.swift; sourceTree = "<group>"; };
+		288632B927D3A5C2003E70F0 /* DesignSystemAdam.aiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignSystemAdam.aiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		288632BD27D3A5C2003E70F0 /* DesignSystemAdam_aiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemAdam_aiUITests.swift; sourceTree = "<group>"; };
+		288632BF27D3A5C2003E70F0 /* DesignSystemAdam_aiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemAdam_aiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		288632CC27D3A614003E70F0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		288632CF27D3A9E7003E70F0 /* DesignSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		288632D127D3A9E7003E70F0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		288632D327D3A9E7003E70F0 /* Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		288632D427D3A9E7003E70F0 /* CustomFontDiscriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFontDiscriptor.swift; sourceTree = "<group>"; };
+		288632D527D3A9E7003E70F0 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		288632DC27D3AA77003E70F0 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		288632DD27D3AA77003E70F0 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		288632DF27D3AA77003E70F0 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.otf"; sourceTree = "<group>"; };
+		288632E227D3AA77003E70F0 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		28A65AA327D4CA98001F8EB2 /* Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Bold.ttf"; sourceTree = "<group>"; };
+		28A65AA427D4CA98001F8EB2 /* Almarai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Regular.ttf"; sourceTree = "<group>"; };
+		28A65AA527D4CA98001F8EB2 /* Almarai-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-ExtraBold.ttf"; sourceTree = "<group>"; };
+		28A65AA627D4CA98001F8EB2 /* Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Light.ttf"; sourceTree = "<group>"; };
+		28A65AAB27D4CDFB001F8EB2 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		28A65AB327D4D963001F8EB2 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		28A65AB527D4EF95001F8EB2 /* Stroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		28A65AB727D4F53D001F8EB2 /* Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
+		4C7933A92B5142959BA012F0 /* Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests/Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55D9DB31F688B30AD1F31786 /* Pods-DesignSystemAdam.aiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.aiTests.release.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.aiTests/Pods-DesignSystemAdam.aiTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FC1C49B56033169BC8E9EAB /* Pods_DesignSystemAdam_aiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignSystemAdam_aiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4D5A023F6BA6A183E56978 /* Pods-DesignSystemAdam.aiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.aiTests.debug.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.aiTests/Pods-DesignSystemAdam.aiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF897FF037C90BFA7C39F8FE /* Pods-DesignSystemAdam.ai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.ai.debug.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.ai/Pods-DesignSystemAdam.ai.debug.xcconfig"; sourceTree = "<group>"; };
+		C511B3925E7016781EEDE4EB /* Pods_DesignSystemAdam_ai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignSystemAdam_ai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8F787684E025535451DAC5 /* Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.release.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests/Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5EE340BCC300BF2A81767AE /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2886329627D3A5BA003E70F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E44179139FE94C5139D30F6 /* Pods_DesignSystemAdam_ai.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288632AC27D3A5C2003E70F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1ED3BEE8E1E884347765147 /* Pods_DesignSystemAdam_aiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288632B627D3A5C2003E70F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD610D4432CA6F971D0A18B /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2886329027D3A5BA003E70F0 = {
+			isa = PBXGroup;
+			children = (
+				2886329B27D3A5BA003E70F0 /* DesignSystemAdam.ai */,
+				288632B227D3A5C2003E70F0 /* DesignSystemAdam.aiTests */,
+				288632BC27D3A5C2003E70F0 /* DesignSystemAdam.aiUITests */,
+				2886329A27D3A5BA003E70F0 /* Products */,
+				42CAA5EE8B9B1AD52B036143 /* Pods */,
+				9FDF8C58A27CF1668E265148 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2886329A27D3A5BA003E70F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2886329927D3A5BA003E70F0 /* DesignSystemAdam.ai.app */,
+				288632AF27D3A5C2003E70F0 /* DesignSystemAdam.aiTests.xctest */,
+				288632B927D3A5C2003E70F0 /* DesignSystemAdam.aiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2886329B27D3A5BA003E70F0 /* DesignSystemAdam.ai */ = {
+			isa = PBXGroup;
+			children = (
+				288632CE27D3A9E7003E70F0 /* SystemDesign */,
+				2886329C27D3A5BA003E70F0 /* AppDelegate.swift */,
+				2886329E27D3A5BA003E70F0 /* SceneDelegate.swift */,
+				288632A027D3A5BA003E70F0 /* ViewController.swift */,
+				288632A227D3A5BA003E70F0 /* Main.storyboard */,
+				288632A527D3A5C1003E70F0 /* Assets.xcassets */,
+				288632A727D3A5C1003E70F0 /* LaunchScreen.storyboard */,
+				288632AA27D3A5C1003E70F0 /* Info.plist */,
+				288632CC27D3A614003E70F0 /* Colors.xcassets */,
+			);
+			path = DesignSystemAdam.ai;
+			sourceTree = "<group>";
+		};
+		288632B227D3A5C2003E70F0 /* DesignSystemAdam.aiTests */ = {
+			isa = PBXGroup;
+			children = (
+				288632B327D3A5C2003E70F0 /* DesignSystemAdam_aiTests.swift */,
+			);
+			path = DesignSystemAdam.aiTests;
+			sourceTree = "<group>";
+		};
+		288632BC27D3A5C2003E70F0 /* DesignSystemAdam.aiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				288632BD27D3A5C2003E70F0 /* DesignSystemAdam_aiUITests.swift */,
+				288632BF27D3A5C2003E70F0 /* DesignSystemAdam_aiUITestsLaunchTests.swift */,
+			);
+			path = DesignSystemAdam.aiUITests;
+			sourceTree = "<group>";
+		};
+		288632CE27D3A9E7003E70F0 /* SystemDesign */ = {
+			isa = PBXGroup;
+			children = (
+				28A65AB227D4D94F001F8EB2 /* Borders */,
+				288632CF27D3A9E7003E70F0 /* DesignSystem.swift */,
+				288632D027D3A9E7003E70F0 /* Colors */,
+				288632D227D3A9E7003E70F0 /* Typography */,
+				28A65AAB27D4CDFB001F8EB2 /* Label.swift */,
+			);
+			path = SystemDesign;
+			sourceTree = "<group>";
+		};
+		288632D027D3A9E7003E70F0 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				288632D127D3A9E7003E70F0 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		288632D227D3A9E7003E70F0 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				288632DB27D3AA77003E70F0 /* Fonts */,
+				288632D327D3A9E7003E70F0 /* Typography.swift */,
+				288632D427D3A9E7003E70F0 /* CustomFontDiscriptor.swift */,
+				288632D527D3A9E7003E70F0 /* Fonts.swift */,
+			);
+			path = Typography;
+			sourceTree = "<group>";
+		};
+		288632DB27D3AA77003E70F0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				28A65AA227D4CA8B001F8EB2 /* Ar */,
+				28A65AA127D4CA83001F8EB2 /* En */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		28A65AA127D4CA83001F8EB2 /* En */ = {
+			isa = PBXGroup;
+			children = (
+				288632DC27D3AA77003E70F0 /* Inter-Bold.otf */,
+				288632DD27D3AA77003E70F0 /* Inter-Regular.otf */,
+				288632DF27D3AA77003E70F0 /* Inter-Light.otf */,
+				288632E227D3AA77003E70F0 /* Inter-SemiBold.otf */,
+			);
+			path = En;
+			sourceTree = "<group>";
+		};
+		28A65AA227D4CA8B001F8EB2 /* Ar */ = {
+			isa = PBXGroup;
+			children = (
+				28A65AA327D4CA98001F8EB2 /* Almarai-Bold.ttf */,
+				28A65AA527D4CA98001F8EB2 /* Almarai-ExtraBold.ttf */,
+				28A65AA627D4CA98001F8EB2 /* Almarai-Light.ttf */,
+				28A65AA427D4CA98001F8EB2 /* Almarai-Regular.ttf */,
+			);
+			path = Ar;
+			sourceTree = "<group>";
+		};
+		28A65AB227D4D94F001F8EB2 /* Borders */ = {
+			isa = PBXGroup;
+			children = (
+				28A65AB327D4D963001F8EB2 /* Shadow.swift */,
+				28A65AB527D4EF95001F8EB2 /* Stroke.swift */,
+				28A65AB727D4F53D001F8EB2 /* Radius.swift */,
+			);
+			path = Borders;
+			sourceTree = "<group>";
+		};
+		42CAA5EE8B9B1AD52B036143 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF897FF037C90BFA7C39F8FE /* Pods-DesignSystemAdam.ai.debug.xcconfig */,
+				24C3FC34F0D6F60096B5BA89 /* Pods-DesignSystemAdam.ai.release.xcconfig */,
+				4C7933A92B5142959BA012F0 /* Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig */,
+				EA8F787684E025535451DAC5 /* Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.release.xcconfig */,
+				AF4D5A023F6BA6A183E56978 /* Pods-DesignSystemAdam.aiTests.debug.xcconfig */,
+				55D9DB31F688B30AD1F31786 /* Pods-DesignSystemAdam.aiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9FDF8C58A27CF1668E265148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C511B3925E7016781EEDE4EB /* Pods_DesignSystemAdam_ai.framework */,
+				F5EE340BCC300BF2A81767AE /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework */,
+				8FC1C49B56033169BC8E9EAB /* Pods_DesignSystemAdam_aiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2886329827D3A5BA003E70F0 /* DesignSystemAdam.ai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288632C327D3A5C2003E70F0 /* Build configuration list for PBXNativeTarget "DesignSystemAdam.ai" */;
+			buildPhases = (
+				3E4592869BC226E89827FC61 /* [CP] Check Pods Manifest.lock */,
+				2886329527D3A5BA003E70F0 /* Sources */,
+				2886329627D3A5BA003E70F0 /* Frameworks */,
+				2886329727D3A5BA003E70F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesignSystemAdam.ai;
+			productName = DesignSystemAdam.ai;
+			productReference = 2886329927D3A5BA003E70F0 /* DesignSystemAdam.ai.app */;
+			productType = "com.apple.product-type.application";
+		};
+		288632AE27D3A5C2003E70F0 /* DesignSystemAdam.aiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288632C627D3A5C2003E70F0 /* Build configuration list for PBXNativeTarget "DesignSystemAdam.aiTests" */;
+			buildPhases = (
+				ECA22E737C33A70F8837D921 /* [CP] Check Pods Manifest.lock */,
+				288632AB27D3A5C2003E70F0 /* Sources */,
+				288632AC27D3A5C2003E70F0 /* Frameworks */,
+				288632AD27D3A5C2003E70F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				288632B127D3A5C2003E70F0 /* PBXTargetDependency */,
+			);
+			name = DesignSystemAdam.aiTests;
+			productName = DesignSystemAdam.aiTests;
+			productReference = 288632AF27D3A5C2003E70F0 /* DesignSystemAdam.aiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		288632B827D3A5C2003E70F0 /* DesignSystemAdam.aiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288632C927D3A5C2003E70F0 /* Build configuration list for PBXNativeTarget "DesignSystemAdam.aiUITests" */;
+			buildPhases = (
+				8EF8096F4F5F3FBB84450285 /* [CP] Check Pods Manifest.lock */,
+				288632B527D3A5C2003E70F0 /* Sources */,
+				288632B627D3A5C2003E70F0 /* Frameworks */,
+				288632B727D3A5C2003E70F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				288632BB27D3A5C2003E70F0 /* PBXTargetDependency */,
+			);
+			name = DesignSystemAdam.aiUITests;
+			productName = DesignSystemAdam.aiUITests;
+			productReference = 288632B927D3A5C2003E70F0 /* DesignSystemAdam.aiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2886329127D3A5BA003E70F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2886329827D3A5BA003E70F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					288632AE27D3A5C2003E70F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2886329827D3A5BA003E70F0;
+					};
+					288632B827D3A5C2003E70F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2886329827D3A5BA003E70F0;
+					};
+				};
+			};
+			buildConfigurationList = 2886329427D3A5BA003E70F0 /* Build configuration list for PBXProject "DesignSystemAdam.ai" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2886329027D3A5BA003E70F0;
+			productRefGroup = 2886329A27D3A5BA003E70F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2886329827D3A5BA003E70F0 /* DesignSystemAdam.ai */,
+				288632AE27D3A5C2003E70F0 /* DesignSystemAdam.aiTests */,
+				288632B827D3A5C2003E70F0 /* DesignSystemAdam.aiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2886329727D3A5BA003E70F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288632A927D3A5C1003E70F0 /* LaunchScreen.storyboard in Resources */,
+				28A65AB127D4D76B001F8EB2 /* Inter-Regular.otf in Resources */,
+				28A65AAF27D4D76B001F8EB2 /* Inter-Bold.otf in Resources */,
+				28A65AB027D4D76B001F8EB2 /* Inter-SemiBold.otf in Resources */,
+				28A65AAE27D4D76B001F8EB2 /* Inter-Light.otf in Resources */,
+				28A65AAA27D4CA98001F8EB2 /* Almarai-Light.ttf in Resources */,
+				28A65AA727D4CA98001F8EB2 /* Almarai-Bold.ttf in Resources */,
+				28A65AA827D4CA98001F8EB2 /* Almarai-Regular.ttf in Resources */,
+				288632CD27D3A614003E70F0 /* Colors.xcassets in Resources */,
+				288632A627D3A5C1003E70F0 /* Assets.xcassets in Resources */,
+				28A65AA927D4CA98001F8EB2 /* Almarai-ExtraBold.ttf in Resources */,
+				288632A427D3A5BA003E70F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288632AD27D3A5C2003E70F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288632B727D3A5C2003E70F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E4592869BC226E89827FC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesignSystemAdam.ai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF8096F4F5F3FBB84450285 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA22E737C33A70F8837D921 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesignSystemAdam.aiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2886329527D3A5BA003E70F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288632DA27D3A9E7003E70F0 /* Fonts.swift in Sources */,
+				288632D927D3A9E7003E70F0 /* CustomFontDiscriptor.swift in Sources */,
+				288632D627D3A9E7003E70F0 /* DesignSystem.swift in Sources */,
+				288632D727D3A9E7003E70F0 /* Colors.swift in Sources */,
+				28A65AB627D4EF95001F8EB2 /* Stroke.swift in Sources */,
+				288632A127D3A5BA003E70F0 /* ViewController.swift in Sources */,
+				28A65AAC27D4CDFB001F8EB2 /* Label.swift in Sources */,
+				2886329D27D3A5BA003E70F0 /* AppDelegate.swift in Sources */,
+				28A65AB427D4D963001F8EB2 /* Shadow.swift in Sources */,
+				288632D827D3A9E7003E70F0 /* Typography.swift in Sources */,
+				2886329F27D3A5BA003E70F0 /* SceneDelegate.swift in Sources */,
+				28A65AB827D4F53E001F8EB2 /* Radius.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288632AB27D3A5C2003E70F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288632B427D3A5C2003E70F0 /* DesignSystemAdam_aiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		288632B527D3A5C2003E70F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288632C027D3A5C2003E70F0 /* DesignSystemAdam_aiUITestsLaunchTests.swift in Sources */,
+				288632BE27D3A5C2003E70F0 /* DesignSystemAdam_aiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		288632B127D3A5C2003E70F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2886329827D3A5BA003E70F0 /* DesignSystemAdam.ai */;
+			targetProxy = 288632B027D3A5C2003E70F0 /* PBXContainerItemProxy */;
+		};
+		288632BB27D3A5C2003E70F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2886329827D3A5BA003E70F0 /* DesignSystemAdam.ai */;
+			targetProxy = 288632BA27D3A5C2003E70F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		288632A227D3A5BA003E70F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				288632A327D3A5BA003E70F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		288632A727D3A5C1003E70F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				288632A827D3A5C1003E70F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		288632C127D3A5C2003E70F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		288632C227D3A5C2003E70F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		288632C427D3A5C2003E70F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF897FF037C90BFA7C39F8FE /* Pods-DesignSystemAdam.ai.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN58C8PX4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesignSystemAdam.ai/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..DesignSystemAdam-ai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		288632C527D3A5C2003E70F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C3FC34F0D6F60096B5BA89 /* Pods-DesignSystemAdam.ai.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN58C8PX4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesignSystemAdam.ai/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..DesignSystemAdam-ai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		288632C727D3A5C2003E70F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF4D5A023F6BA6A183E56978 /* Pods-DesignSystemAdam.aiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN58C8PX4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..DesignSystemAdam-aiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesignSystemAdam.ai.app/DesignSystemAdam.ai";
+			};
+			name = Debug;
+		};
+		288632C827D3A5C2003E70F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D9DB31F688B30AD1F31786 /* Pods-DesignSystemAdam.aiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN58C8PX4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..DesignSystemAdam-aiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesignSystemAdam.ai.app/DesignSystemAdam.ai";
+			};
+			name = Release;
+		};
+		288632CA27D3A5C2003E70F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7933A92B5142959BA012F0 /* Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN58C8PX4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..DesignSystemAdam-aiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesignSystemAdam.ai;
+			};
+			name = Debug;
+		};
+		288632CB27D3A5C2003E70F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8F787684E025535451DAC5 /* Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN58C8PX4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com..DesignSystemAdam-aiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesignSystemAdam.ai;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2886329427D3A5BA003E70F0 /* Build configuration list for PBXProject "DesignSystemAdam.ai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288632C127D3A5C2003E70F0 /* Debug */,
+				288632C227D3A5C2003E70F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288632C327D3A5C2003E70F0 /* Build configuration list for PBXNativeTarget "DesignSystemAdam.ai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288632C427D3A5C2003E70F0 /* Debug */,
+				288632C527D3A5C2003E70F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288632C627D3A5C2003E70F0 /* Build configuration list for PBXNativeTarget "DesignSystemAdam.aiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288632C727D3A5C2003E70F0 /* Debug */,
+				288632C827D3A5C2003E70F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288632C927D3A5C2003E70F0 /* Build configuration list for PBXNativeTarget "DesignSystemAdam.aiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288632CA27D3A5C2003E70F0 /* Debug */,
+				288632CB27D3A5C2003E70F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2886329127D3A5BA003E70F0 /* Project object */;
+}
