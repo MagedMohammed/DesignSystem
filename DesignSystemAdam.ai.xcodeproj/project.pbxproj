@@ -35,6 +35,8 @@
 		28A65AB427D4D963001F8EB2 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65AB327D4D963001F8EB2 /* Shadow.swift */; };
 		28A65AB627D4EF95001F8EB2 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65AB527D4EF95001F8EB2 /* Stroke.swift */; };
 		28A65AB827D4F53E001F8EB2 /* Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A65AB727D4F53D001F8EB2 /* Radius.swift */; };
+		28AECBB927D62FE500D7A379 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AECBB827D62FE500D7A379 /* TextField.swift */; };
+		28AECBBC27D638CC00D7A379 /* TextFieldStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AECBBB27D638CC00D7A379 /* TextFieldStates.swift */; };
 		8BD610D4432CA6F971D0A18B /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE340BCC300BF2A81767AE /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework */; };
 		B1ED3BEE8E1E884347765147 /* Pods_DesignSystemAdam_aiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC1C49B56033169BC8E9EAB /* Pods_DesignSystemAdam_aiTests.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +91,8 @@
 		28A65AB327D4D963001F8EB2 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		28A65AB527D4EF95001F8EB2 /* Stroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
 		28A65AB727D4F53D001F8EB2 /* Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radius.swift; sourceTree = "<group>"; };
+		28AECBB827D62FE500D7A379 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		28AECBBB27D638CC00D7A379 /* TextFieldStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStates.swift; sourceTree = "<group>"; };
 		4C7933A92B5142959BA012F0 /* Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests/Pods-DesignSystemAdam.ai-DesignSystemAdam.aiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		55D9DB31F688B30AD1F31786 /* Pods-DesignSystemAdam.aiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.aiTests.release.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.aiTests/Pods-DesignSystemAdam.aiTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FC1C49B56033169BC8E9EAB /* Pods_DesignSystemAdam_aiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignSystemAdam_aiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,8 +189,9 @@
 		288632CE27D3A9E7003E70F0 /* SystemDesign */ = {
 			isa = PBXGroup;
 			children = (
-				28A65AB227D4D94F001F8EB2 /* Borders */,
 				288632CF27D3A9E7003E70F0 /* DesignSystem.swift */,
+				28AECBBA27D638AD00D7A379 /* TextField */,
+				28A65AB227D4D94F001F8EB2 /* Borders */,
 				288632D027D3A9E7003E70F0 /* Colors */,
 				288632D227D3A9E7003E70F0 /* Typography */,
 				28A65AAB27D4CDFB001F8EB2 /* Label.swift */,
@@ -252,6 +257,15 @@
 				28A65AB727D4F53D001F8EB2 /* Radius.swift */,
 			);
 			path = Borders;
+			sourceTree = "<group>";
+		};
+		28AECBBA27D638AD00D7A379 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				28AECBB827D62FE500D7A379 /* TextField.swift */,
+				28AECBBB27D638CC00D7A379 /* TextFieldStates.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		42CAA5EE8B9B1AD52B036143 /* Pods */ = {
@@ -494,11 +508,13 @@
 				288632D627D3A9E7003E70F0 /* DesignSystem.swift in Sources */,
 				288632D727D3A9E7003E70F0 /* Colors.swift in Sources */,
 				28A65AB627D4EF95001F8EB2 /* Stroke.swift in Sources */,
+				28AECBB927D62FE500D7A379 /* TextField.swift in Sources */,
 				288632A127D3A5BA003E70F0 /* ViewController.swift in Sources */,
 				28A65AAC27D4CDFB001F8EB2 /* Label.swift in Sources */,
 				2886329D27D3A5BA003E70F0 /* AppDelegate.swift in Sources */,
 				28A65AB427D4D963001F8EB2 /* Shadow.swift in Sources */,
 				288632D827D3A9E7003E70F0 /* Typography.swift in Sources */,
+				28AECBBC27D638CC00D7A379 /* TextFieldStates.swift in Sources */,
 				2886329F27D3A5BA003E70F0 /* SceneDelegate.swift in Sources */,
 				28A65AB827D4F53E001F8EB2 /* Radius.swift in Sources */,
 			);
