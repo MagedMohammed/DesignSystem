@@ -18,7 +18,7 @@ extension DesignSystem{
         case LG
         
         
-        func radius(view: UIView ) -> CGFloat {
+        func radius(view: UIView = UIView()) -> CGFloat {
             switch self{
             case .XS:
                 return 4

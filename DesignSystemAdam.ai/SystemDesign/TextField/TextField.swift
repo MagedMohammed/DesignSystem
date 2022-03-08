@@ -7,6 +7,18 @@
 
 import UIKit
 
+
+class AdamTextField: UITextField {
+    @IBInspectable var style: String = "" {
+        didSet {
+            guard let state = SDTFStates(rawValue: style) else { return }
+            self.setStyle(states: state)
+        }
+    }
+}
+
+
+
 extension UITextField {
     
     func setStyle(states: SDTFStates){
@@ -22,7 +34,7 @@ extension UITextField {
             self.borderStyle = .none
             self.isEnabled = true
 
-        case .Focus:
+        case .Active:
             let attributes = [
                 NSAttributedString.Key.foregroundColor: SDColor.SecondaryGray700.color,
                 NSAttributedString.Key.font : SDFont.titleR.font

@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var textfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.textfield.setStyle(states: .Focus)
         // Do any additional setup after loading the view.
         
 

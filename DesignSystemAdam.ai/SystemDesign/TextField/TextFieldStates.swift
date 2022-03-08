@@ -10,9 +10,10 @@ import Foundation
 typealias SDTFStates = DesignSystem.TextFieldStates
 
 extension DesignSystem {
-    enum TextFieldStates {
+    
+    enum TextFieldStates: String {
         case Default
-        case Focus
+        case Active
         case Error
         case Filled
         case Disabled
