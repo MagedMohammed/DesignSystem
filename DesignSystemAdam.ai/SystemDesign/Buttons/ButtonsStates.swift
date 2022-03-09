@@ -19,7 +19,7 @@ extension DesignSystem {
         case Loading
         
         
-        var font: UIFont { return SDFont.bodyB.font }
+        var font: UIFont { return SDFont.CaptionB.font }
         
         var color: UIColor {
             switch self {

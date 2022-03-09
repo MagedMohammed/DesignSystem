@@ -27,7 +27,7 @@ extension UITextField {
         case .Default, .Error, .Filled:
             let attributes = [
                 NSAttributedString.Key.foregroundColor: SDColor.SecondaryGray700.color,
-                NSAttributedString.Key.font : SDFont.titleR.font
+                NSAttributedString.Key.font : SDFont.BodyR.font
             ]
             self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: attributes)
             self.backgroundColor = .clear
@@ -37,7 +37,7 @@ extension UITextField {
         case .Active:
             let attributes = [
                 NSAttributedString.Key.foregroundColor: SDColor.SecondaryGray700.color,
-                NSAttributedString.Key.font : SDFont.titleR.font
+                NSAttributedString.Key.font : SDFont.BodyR.font
             ]
             self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: attributes)
             self.backgroundColor = .clear
@@ -55,7 +55,7 @@ extension UITextField {
         case .Disabled:
             let attributes = [
                 NSAttributedString.Key.foregroundColor: SDColor.SecondaryGray600.color,
-                NSAttributedString.Key.font : SDFont.titleR.font
+                NSAttributedString.Key.font : SDFont.BodyR.font
             ]
             self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: attributes)
             self.backgroundColor = .clear

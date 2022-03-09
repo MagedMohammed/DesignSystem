@@ -9,6 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+        <array key="Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
         <array key="Inter-Medium.otf">
             <string>Inter-Medium</string>
         </array>
@@ -476,7 +482,13 @@
                             <constraint firstItem="Fuf-cY-GWc" firstAttribute="centerX" secondItem="JCN-kN-mKS" secondAttribute="centerX" id="ajV-5a-Xuk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qio-NL-Yjp"/>
+                    <navigationItem key="navigationItem" id="qio-NL-Yjp">
+                        <barButtonItem key="rightBarButtonItem" title="Typography" id="gEe-db-COA">
+                            <connections>
+                                <segue destination="c60-XD-hSA" kind="show" id="NRF-xZ-xJM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSG-De-NTp" sceneMemberID="firstResponder"/>
             </objects>
@@ -500,11 +512,332 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2wF-9r-7e9">
+            <objects>
+                <viewController id="c60-XD-hSA" customClass="ViewController" customModule="DesignSystemAdam_ai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="H7p-7e-pBn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-vP-rvP">
+                                <rect key="frame" x="20" y="96" width="374" height="758"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-4b-Lho">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="758"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfi-QX-ygO" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H1"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvf-Fv-Y78" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="64" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H2"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-JO-Yru" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="127.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H3"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb7-oT-m4E" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="191.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H4"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JG-bf-Gtv" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="255.5" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H5"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDp-NC-xND" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="319" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H6"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BodyR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-Gq-J2b" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="383" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="BodyR"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BodyB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOj-L5-EV0" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="447" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="BodyB"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CaptionR " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XD-ad-bvF" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="510.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="CaptionR "/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CaptionB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeI-vq-zjk" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="574.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="CaptionB"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HintR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnJ-AT-cOw" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="638.5" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="HintR"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HintB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikX-ag-Huq" customClass="AdamLabel" customModule="DesignSystemAdam_ai" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="702" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="HintB"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Aic-GI-pdI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aic-GI-pdI" firstAttribute="bottom" secondItem="Edq-vP-rvP" secondAttribute="bottom" constant="8" id="1Ii-Qh-vCh"/>
+                            <constraint firstItem="Edq-vP-rvP" firstAttribute="centerX" secondItem="H7p-7e-pBn" secondAttribute="centerX" id="6vB-vq-a1G"/>
+                            <constraint firstItem="Edq-vP-rvP" firstAttribute="leading" secondItem="Aic-GI-pdI" secondAttribute="leading" constant="20" id="EJQ-Ie-oEQ"/>
+                            <constraint firstItem="Edq-vP-rvP" firstAttribute="top" secondItem="Aic-GI-pdI" secondAttribute="top" constant="8" id="bSc-3J-BYw"/>
+                            <constraint firstItem="Aic-GI-pdI" firstAttribute="trailing" secondItem="Edq-vP-rvP" secondAttribute="trailing" constant="20" id="cUI-Qh-ChT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="g8c-NP-jVc">
+                        <barButtonItem key="rightBarButtonItem" title="AR" id="K0B-iZ-zfW">
+                            <connections>
+                                <segue destination="aV0-j4-KQh" kind="show" id="uDL-sL-2G2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HL-Fv-XH8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3071" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NI3-XH-co5">
+            <objects>
+                <viewController id="aV0-j4-KQh" customClass="ViewController" customModule="DesignSystemAdam_ai" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="wf4-uJ-Eqp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NmV-pY-ih6">
+                                <rect key="frame" x="20" y="96" width="374" height="758"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dTi-Kh-ayH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="758"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان ١" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIP-VX-hKm">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="50"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H1"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان ٢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpy-iL-6WC">
+                                                <rect key="frame" x="0.0" y="64" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="42"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H2"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان ٣" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA7-Aq-3x3">
+                                                <rect key="frame" x="0.0" y="127.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="35"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H3"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان ٤" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vC2-7C-nh2">
+                                                <rect key="frame" x="0.0" y="191.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="29"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H4"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان ٥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrp-p7-AJh">
+                                                <rect key="frame" x="0.0" y="255.5" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="24"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H5"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان ٦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-eP-tH1">
+                                                <rect key="frame" x="0.0" y="319" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="20"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="H6"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فقرة R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-G6-AE8">
+                                                <rect key="frame" x="0.0" y="383" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="BodyR"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فقرة B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZq-dv-1rx">
+                                                <rect key="frame" x="0.0" y="447" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="17"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="BodyB"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تعليق  R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-AT-0ui">
+                                                <rect key="frame" x="0.0" y="510.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="CaptionR "/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تعليق  B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0Z-WT-bVg">
+                                                <rect key="frame" x="0.0" y="574.5" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="14"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="CaptionB"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تلميح R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8E-t2-ci4">
+                                                <rect key="frame" x="0.0" y="638.5" width="374" height="55.5"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="HintR"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تلميح B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tT-Yu-WT6">
+                                                <rect key="frame" x="0.0" y="702" width="374" height="56"/>
+                                                <color key="backgroundColor" name="SecondaryGray50"/>
+                                                <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="12"/>
+                                                <color key="textColor" name="Black2"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="style" value="HintB"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bkW-DU-7Xt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bkW-DU-7Xt" firstAttribute="trailing" secondItem="NmV-pY-ih6" secondAttribute="trailing" constant="20" id="Bvf-S2-4WV"/>
+                            <constraint firstItem="NmV-pY-ih6" firstAttribute="top" secondItem="bkW-DU-7Xt" secondAttribute="top" constant="8" id="OAe-1s-4Nl"/>
+                            <constraint firstItem="NmV-pY-ih6" firstAttribute="leading" secondItem="bkW-DU-7Xt" secondAttribute="leading" constant="20" id="jqw-sb-dJS"/>
+                            <constraint firstItem="NmV-pY-ih6" firstAttribute="centerX" secondItem="wf4-uJ-Eqp" secondAttribute="centerX" id="l0N-ba-iH9"/>
+                            <constraint firstItem="bkW-DU-7Xt" firstAttribute="bottom" secondItem="NmV-pY-ih6" secondAttribute="bottom" constant="8" id="mI2-Qj-S9d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="L4E-Sx-awC">
+                        <barButtonItem key="rightBarButtonItem" title="Button" id="SpG-CA-yZi"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvS-ps-Gq7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3709" y="94"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Add" width="30" height="30"/>
         <image name="View" width="30" height="30"/>
         <image name="hide" width="24" height="24"/>
+        <namedColor name="Black2">
+            <color red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="PrimaryPrimary500">
             <color red="0.0039215686274509803" green="0.49411764705882355" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
