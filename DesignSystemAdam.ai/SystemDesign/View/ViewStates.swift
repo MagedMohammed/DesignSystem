@@ -8,9 +8,26 @@
 import Foundation
 import UIKit
 
+/// The following  View States is used  **consistently**  throughout the system
+///
+///  **SDVStates** Options  :
+/// - "Default "
+/// - "Active"
+/// - "Error"
+/// - "Filled"
+/// - "Disabled"
 typealias SDVStates = DesignSystem.ViewStates
 
 extension DesignSystem {
+    
+    /// The following  View States is used  **consistently**  throughout the system.
+    ///
+    ///  __States__  Options:
+    /// - "Default "
+    /// - "Active"
+    /// - "Error"
+    /// - "Filled"
+    /// - "Disabled"
     enum ViewStates: String {
         case Default
         case Active

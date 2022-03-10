@@ -6,8 +6,18 @@
 //
 
 import Foundation
+
+
+/// ** Font Name **  based on App Language "En" or "Ar".
 typealias Font = EnFont
 
+/// ** Inter ** Family Fonts
+///
+/// Fonts Weight:
+/// - Inter-Light
+/// - Inter-Regular
+/// - Inter-SemiBold
+/// - Inter-Bold
 enum EnFont: String {
     case Light300 = "Inter-Light"
     case Regular400 = "Inter-Regular"
@@ -19,6 +29,13 @@ enum EnFont: String {
     }
 }
 
+/// ** Almarai ** Family Fonts
+///
+/// Fonts Weight:
+/// - Almarai-Light
+/// - Almarai-Regular
+/// - Almarai-Bold
+/// - Almarai-ExtraBold
 enum ArFont: String {
     case Light300   = "Almarai-Light"
     case Regular400 = "Almarai-Regular"

@@ -8,29 +8,33 @@
 import Foundation
 import UIKit
 
+/// The following  Stroke is used  **consistently**  throughout the system
+///
+///  **SDStroke** Options  :
+/// - "Default "
+/// - "Active1"
+/// - "Active2"
+/// - "Active3"
+/// - "Dashed"
 typealias SDStroke = DesignSystem.Stroke
+
 extension DesignSystem{
-    
+    /// The following  Stroke is used  **consistently**  throughout the system.
+    ///
+    ///  ## Stroke Options
+    /// - ``Default``
+    /// - ``Active1``
+    /// - ``Active2``
+    /// - ``Active3``
+    /// - ``Dashed``
     enum Stroke: String {
         case Default
         case Active1
         case Active2
         case Active3
         case Dashed
-        
-        
-//        var cornerRadius: Float {
-//            switch self {
-//            case .Default:
-//                return 8
-//            case .Active1:
-//                return 8
-//            case .Active2:
-//                return 8
-//            case .Active3:
-//                return 8
-//            }
-//        }
+
+        /// **return** Border Width **Value**
         var borderWidth: CGFloat {
             switch self {
             case .Default:
@@ -46,6 +50,7 @@ extension DesignSystem{
             }
         }
         
+        /// **return** Border Color **Value**
         var borderColor: CGColor {
             switch self {
             case .Default:

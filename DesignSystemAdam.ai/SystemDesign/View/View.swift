@@ -9,6 +9,7 @@ import UIKit
 
 class AdamView: UIView {
     
+    /// Set View  Style
     @IBInspectable var style: String = "" {
         didSet {
             guard let state = SDVStates(rawValue: style) else { return }
@@ -19,7 +20,7 @@ class AdamView: UIView {
         }
     }
     
-    
+    /// Set Shadow  Style
     @IBInspectable var shadow: String = "" {
         didSet {
             guard let shadow = SDShadow(rawValue:shadow) else
@@ -31,6 +32,7 @@ class AdamView: UIView {
         }
     }
     
+    /// Set Stroke  Style
     @IBInspectable var stroke: String = "" {
         didSet {
             if stroke == "dashed"{
@@ -46,6 +48,7 @@ class AdamView: UIView {
         }
     }
     
+    /// Set Radius  Style
     @IBInspectable var radius: String = "" {
         didSet {
             guard let value = SDRadius(rawValue: radius)?.radius(view: self) else{ return }
@@ -54,6 +57,7 @@ class AdamView: UIView {
         }
     }
     
+    /// Set Dashed Border
     func dashedBorder(){
         let color = UIColor(red: 0.808, green: 0.831, blue: 0.855, alpha: 1).cgColor
         let shapeLayer:CAShapeLayer = CAShapeLayer()

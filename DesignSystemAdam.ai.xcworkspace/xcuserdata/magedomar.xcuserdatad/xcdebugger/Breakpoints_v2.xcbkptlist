@@ -14,25 +14,9 @@
             filePath = "DesignSystemAdam.ai/SystemDesign/Typography/Fonts.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "name"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3BCFD199-A95B-44BB-9FB7-56B1813BD05C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DesignSystemAdam.ai/SystemDesign/Typography/Typography.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "font"
             landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>

@@ -7,8 +7,10 @@
 
 import UIKit
 
+/// Create UIButton With Design System Options
 class AdamButtons: UIButton {
     
+    /// Set Radius Value
     @IBInspectable var radius: String = "" {
         didSet {
             guard let value = SDRadius(rawValue: radius)?.radius(view: self) else{ return }
@@ -16,6 +18,7 @@ class AdamButtons: UIButton {
         }
     }
     
+    /// Selected Style From Button States
     @IBInspectable var style: String = "" {
         didSet {
             guard let state = SDBStates(rawValue: style) else { return }
@@ -28,7 +31,6 @@ class AdamButtons: UIButton {
             self.layer.cornerRadius = SDRadius.SM.radius()
             self.titleLabel!.textColor = SDColor.white.color
             self.tintColor = SDColor.white.color
-            
         }
     }
 }

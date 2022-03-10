@@ -8,22 +8,49 @@
 import Foundation
 import UIKit
 
-
+/// The following  Typography is used  **consistently**  throughout the system
+///
+/// Typography Style Options :
+/// - H1
+/// - H2
+/// - H3
+/// - H4
+/// - H5
+/// - H6
+/// - BodyR
+/// - BodyB
+/// - CaptionR
+/// - CaptionB
+/// - HintR
+/// - HintB
 typealias SDFont = DesignSystem.Typography
+
 extension DesignSystem{
     
     enum Typography: String {
+        /// Font size 50px, Bold weight  and title1 Style
         case H1
+        /// Font size 42px, Bold weight  and title1 Style
         case H2
+        /// Font size 35px, Bold weight  and title1 Style
         case H3
+        /// Font size 29px, Bold weight  and title1 Style
         case H4
+        /// Font size 24px, Bold weight  and title1 Style
         case H5
+        /// Font size 20px, Bold weight  and title1 Style
         case H6
+        /// Font size 17px, Regular weight  and body Style
         case BodyR
+        /// Font size 17px, Bold weight  and body Style
         case BodyB
+        /// Font size 14px, Regular weight  and caption1 Style
         case CaptionR
+        /// Font size 14px, Bold weight  and caption1 Style
         case CaptionB
+        /// Font size 12px, Regular weight  and caption2 Style
         case HintR
+        /// Font size 12px, Regular weight  and caption2 Style
         case HintB
         
         private var fontDiscriptor: CustomFontDiscriptor {
@@ -55,6 +82,7 @@ extension DesignSystem{
                 
             }
         }
+        /// ** return ** UIFont With Design system Style
         var font: UIFont {
             guard let newfont = UIFont(name: fontDiscriptor.font.rawValue, size: fontDiscriptor.size) else {
                 return UIFont.preferredFont(forTextStyle: fontDiscriptor.style)

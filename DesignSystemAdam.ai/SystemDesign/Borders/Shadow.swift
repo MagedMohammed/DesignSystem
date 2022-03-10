@@ -8,21 +8,38 @@
 import Foundation
 import UIKit
 
+/// The following  shadows is used  **consistently**  throughout the system
+/// 
+///  **SDShadow** Options  :
+/// - "XS "
+/// - "SM"
+/// - "MD"
+/// - "LG"
 typealias SDShadow = DesignSystem.Shadow
+
 extension DesignSystem{
-    
+    /// The following  shadows is used  **consistently**  throughout the system.
+    ///
+    ///  __Shadow__  Options:
+    /// - "XS "
+    /// - "SM"
+    /// - "MD"
+    /// - "LG"
     enum Shadow: String {
         case XS
         case SM
         case MD
         case LG
         
+        /// **return** UIcolor With Shadow Color
         var color: CGColor { return UIColor(red: 0.129, green: 0.145, blue: 0.161, alpha: 0.15).cgColor }
         
+        /// **return** Shadow Opacity **Value**
         var shadowOpacity: Float {
             return 1
         }
         
+        /// **return** Shadow Opacity **Value**
         var shadowRadius: CGFloat {
             switch self{
             case .XS:
@@ -36,6 +53,7 @@ extension DesignSystem{
             }
         }
         
+        /// **return** Shadow Offset **Value**
         var shadowOffset: CGSize {
             switch self{
             case .XS:

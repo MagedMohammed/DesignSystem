@@ -8,12 +8,17 @@
 import Foundation
 import UIKit
 
+/// The following  Colors is used  **consistently**  throughout the system
 typealias SDColor = DesignSystem.Colors
 
 extension DesignSystem{
+    
+    /// System Design Colors names from Colors Assets
+    ///
+    /// __Notes:__ please Don't use any color out of Colors Assets
     enum Colors: String {
         
-        // PrimaryColorScale
+        /// PrimaryColorScale
         case PrimaryPrimary50 = "PrimaryPrimary50"
         case PrimaryPrimary100 = "PrimaryPrimary100"
         case PrimaryPrimary200 = "PrimaryPrimary200"
@@ -25,7 +30,7 @@ extension DesignSystem{
         case PrimaryPrimary800 = "PrimaryPrimary800"
         case PrimaryPrimary900 = "PrimaryPrimary900"
         
-        //SecondaryGrayScale
+        /// SecondaryGrayScale
         case SecondaryGray50 = "SecondaryGray50"
         case SecondaryGray100 = "SecondaryGray100"
         case SecondaryGray200 = "SecondaryGray200"
@@ -37,12 +42,12 @@ extension DesignSystem{
         case SecondaryGray800 = "SecondaryGray800"
         case SecondaryGray900 = "SecondaryGray900"
         
-        //white - black
+        /// white - black
         case white = "SecondaryWhite"
         case black = "SecondaryBlack"
         case clear = "Clear"
         
-        // DestructiveRedScale
+        /// DestructiveRedScale
         case DestructiveRed100 = "DestructiveRed100"
         case DestructiveRed200 = "DestructiveRed200"
         case DestructiveRed300 = "DestructiveRed300"
@@ -51,7 +56,7 @@ extension DesignSystem{
         case DestructiveRed600 = "DestructiveRed600"
         case DestructiveRed700 = "DestructiveRed700"
         
-        // StatesTraffic Light
+        /// StatesTraffic Light
         case DefaultLight = "Default - Light"
         case StateGreenLight = "StateGreen - Light"
         case StateGreenMain = "StateGreen - Main"
@@ -60,7 +65,7 @@ extension DesignSystem{
         case StateYellowLight = "StateYellow - Light"
         case StateYellowMain = "StateYellow - Main"
         
-        // Tertiary - Accent Colors
+        /// Tertiary - Accent Colors
         case Beige1 = "Beige1"
         case Beige2 = "Beige2"
         case Beige3 = "Beige3"
@@ -88,6 +93,7 @@ extension DesignSystem{
         case Yellow1 = "Yellow1"
         case Yellow2 = "Yellow2"
         
+        ///  **return**  UIColor from Design System  Colors
         var color: UIColor {
             guard let color = UIColor(named: self.rawValue) else {
                 fatalError("Color not found")

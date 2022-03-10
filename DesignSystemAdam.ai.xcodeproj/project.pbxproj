@@ -64,6 +64,9 @@
 
 /* Begin PBXFileReference section */
 		24C3FC34F0D6F60096B5BA89 /* Pods-DesignSystemAdam.ai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignSystemAdam.ai.release.xcconfig"; path = "Target Support Files/Pods-DesignSystemAdam.ai/Pods-DesignSystemAdam.ai.release.xcconfig"; sourceTree = "<group>"; };
+		28782BF027D9DE5F000B6D84 /* SlothCreatorBuildingDocCDocumentationInXcode */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SlothCreatorBuildingDocCDocumentationInXcode; path = ../../Downloads/SlothCreatorBuildingDocCDocumentationInXcode; sourceTree = "<group>"; };
+		28782BF127D9DE90000B6D84 /* SlothCreatorBuildingDocCDocumentationInXcode.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = SlothCreatorBuildingDocCDocumentationInXcode.zip; path = ../../Downloads/SlothCreatorBuildingDocCDocumentationInXcode.zip; sourceTree = "<group>"; };
+		28782BF227D9DEC7000B6D84 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = SlothCreatorBuildingDocCDocumentationInXcode/Package.swift; sourceTree = "<group>"; };
 		2886329927D3A5BA003E70F0 /* DesignSystemAdam.ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignSystemAdam.ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2886329C27D3A5BA003E70F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2886329E27D3A5BA003E70F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,14 +200,14 @@
 		288632CE27D3A9E7003E70F0 /* SystemDesign */ = {
 			isa = PBXGroup;
 			children = (
+				288632CF27D3A9E7003E70F0 /* DesignSystem.swift */,
+				28A65AAB27D4CDFB001F8EB2 /* Label.swift */,
 				28AECBC227D7478500D7A379 /* View */,
 				28AECBBD27D641C700D7A379 /* Buttons */,
-				288632CF27D3A9E7003E70F0 /* DesignSystem.swift */,
 				28AECBBA27D638AD00D7A379 /* TextField */,
 				28A65AB227D4D94F001F8EB2 /* Borders */,
 				288632D027D3A9E7003E70F0 /* Colors */,
 				288632D227D3A9E7003E70F0 /* Typography */,
-				28A65AAB27D4CDFB001F8EB2 /* Label.swift */,
 			);
 			path = SystemDesign;
 			sourceTree = "<group>";
@@ -312,6 +315,9 @@
 		9FDF8C58A27CF1668E265148 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28782BF227D9DEC7000B6D84 /* Package.swift */,
+				28782BF127D9DE90000B6D84 /* SlothCreatorBuildingDocCDocumentationInXcode.zip */,
+				28782BF027D9DE5F000B6D84 /* SlothCreatorBuildingDocCDocumentationInXcode */,
 				C511B3925E7016781EEDE4EB /* Pods_DesignSystemAdam_ai.framework */,
 				F5EE340BCC300BF2A81767AE /* Pods_DesignSystemAdam_ai_DesignSystemAdam_aiUITests.framework */,
 				8FC1C49B56033169BC8E9EAB /* Pods_DesignSystemAdam_aiTests.framework */,
@@ -336,6 +342,8 @@
 			dependencies = (
 			);
 			name = DesignSystemAdam.ai;
+			packageProductDependencies = (
+			);
 			productName = DesignSystemAdam.ai;
 			productReference = 2886329927D3A5BA003E70F0 /* DesignSystemAdam.ai.app */;
 			productType = "com.apple.product-type.application";

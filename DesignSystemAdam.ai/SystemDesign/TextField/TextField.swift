@@ -9,6 +9,8 @@ import UIKit
 
 
 class AdamTextField: UITextField {
+    
+    /// Set TextField  Style
     @IBInspectable var style: String = "" {
         didSet {
             guard let state = SDTFStates(rawValue: style) else { return }
@@ -20,7 +22,17 @@ class AdamTextField: UITextField {
 
 
 extension UITextField {
-    
+    /// __setStyle__ function for TextField
+    ///
+    /// - Parameters:
+    /// - Parameter states: the style of TextField Style From design system
+    ///
+    ///  __States:__
+    /// - Active
+    /// - Default
+    /// - Disabled
+    /// - Error
+    /// - Filled
     func setStyle(states: SDTFStates){
         
         switch states {

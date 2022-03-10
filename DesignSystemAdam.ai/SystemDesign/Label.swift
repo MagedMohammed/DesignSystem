@@ -8,15 +8,16 @@
 import Foundation
 import UIKit
 
+/// Create UILabel With Design System Options
 class AdamLabel: UILabel {
-    
+    /// Selected Style From Typography
     @IBInspectable var style: String = "" {
         didSet {
             guard let font = SDFont(rawValue: style) else { return }
             self.font = font.font
         }
     }
-    
+    /// Set Shadow Value
     @IBInspectable var shadow: String = "" {
         didSet {
             guard let shadow = SDShadow(rawValue:shadow) else
@@ -27,13 +28,13 @@ class AdamLabel: UILabel {
             self.layer.shadowOffset = shadow.shadowOffset
         }
     }
-    
+    /// Set Stroke Value
     @IBInspectable var stroke: String = "" {
         didSet {
             if stroke == "dashed"{
                 //wLdVc
-//                self.layer.borderColor = UIColor(patternImage: UIImage(named: "wLdVc")!).cgColor
-//                self.layer.borderWidth = 2
+                //                self.layer.borderColor = UIColor(patternImage: UIImage(named: "wLdVc")!).cgColor
+                //                self.layer.borderWidth = 2
                 self.dashedBorder()
             }else{
                 guard let stroke = SDStroke(rawValue: stroke) else { return }
@@ -42,14 +43,17 @@ class AdamLabel: UILabel {
             }
         }
     }
+    
+    /// Set Radius Value
     @IBInspectable var radius: String = "" {
         didSet {
             guard let value = SDRadius(rawValue: radius)?.radius(view: self) else{ return }
             self.layer.cornerRadius = value
-//            self.layer.masksToBounds = true
+            //            self.layer.masksToBounds = true
         }
     }
     
+    /// Set Dashed Border
     func dashedBorder(){
         let color = UIColor(red: 0.808, green: 0.831, blue: 0.855, alpha: 1).cgColor
         let shapeLayer:CAShapeLayer = CAShapeLayer()
@@ -64,15 +68,5 @@ class AdamLabel: UILabel {
         shapeLayer.lineDashPattern = [6,3]
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 4).cgPath
         self.layer.addSublayer(shapeLayer)
-//        let borderLayer = CAShapeLayer()
-//        borderLayer.strokeColor = UIColor.gray.cgColor
-//        borderLayer.lineDashPattern = [15, 15, 5]
-//        borderLayer.frame = self.bounds
-//        borderLayer.fillColor = nil
-//        borderLayer.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: self.layer.cornerRadius, height: self.layer.cornerRadius)).cgPath
-//        self.layer.addSublayer(borderLayer)
-//        self.translatesAutoresizingMaskIntoConstraints = false
-
     }
-    
 }

@@ -7,7 +7,8 @@
 
 import UIKit
 
-struct CustomFontDiscriptor{
+/// Design System Font Style Model
+struct CustomFontDiscriptor {
     var font: Font
     var size: CGFloat
     var style: UIFont.TextStyle

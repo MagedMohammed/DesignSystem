@@ -8,16 +8,36 @@
 import Foundation
 import UIKit
 
+/// The following  Radius is used  **consistently**  throughout the system
+///
+///  **SDRadius** Options  :
+/// - "XS "
+/// - "SM"
+/// - "MD"
+/// - "LG"
 typealias SDRadius = DesignSystem.Radius
+
 extension DesignSystem{
     
+    /// The following  Radius is used  **consistently**  throughout the system.
+    ///
+    ///  ## Radius Options
+    /// - ``XS``
+    /// - ``SM``
+    /// - ``MD``
+    /// - ``LG``
     enum Radius: String {
         case XS
         case SM
         case MD
         case LG
         
-        
+        /// **return**  Radius  **Value**
+        ///
+        /// - Parameters:
+        /// - view : get high from view frame to return circle radius value.
+        ///
+        /// __Notes:__ it is  Optional
         func radius(view: UIView = UIView()) -> CGFloat {
             switch self{
             case .XS:
