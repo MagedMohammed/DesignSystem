@@ -21,7 +21,7 @@ extension DesignSystem{
         case H6
         case BodyR
         case BodyB
-        case CaptionR 
+        case CaptionR
         case CaptionB
         case HintR
         case HintB
@@ -52,7 +52,7 @@ extension DesignSystem{
                 return CustomFontDiscriptor(font: .Regular400, size: 12, style: .caption2)
             case .HintB:
                 return CustomFontDiscriptor(font: .Bold800, size: 12, style: .caption2)
-
+                
             }
         }
         var font: UIFont {
